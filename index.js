@@ -12,7 +12,7 @@ function getCustomerStatus(chatId) {
 }
 
 bot.on("message", async (msg) => {
-  const chatId = msg.chat.id;
+  const chatId = msg.chat.first_name;
   const userInput = msg.text;
   const customerStatus = getCustomerStatus(chatId);
 
